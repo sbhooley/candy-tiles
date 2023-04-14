@@ -1,0 +1,23 @@
+name: candy-tiles
+id: 75476eeb-29e3-4300-a01a-299f9db00575
+languages:
+  - Python
+extensions:
+  - .py
+  - .cgi
+  - .fcgi
+  - .gyp
+  - .gypi
+  - .lmi
+  - .py3
+  - .pyde
+  - .pyi
+  - .pyp
+  - .pyt
+  - .pyw
+  - .rpy
+  - .smk
+  - .spec
+  - .tac
+  - .wsgi
+  - .xpy
