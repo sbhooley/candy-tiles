@@ -13,16 +13,21 @@ export default (onUserCreated?: () => void) => {
 		'createUser',
 		({ email, nickname, password }: UserData) => createUser(email, nickname, password),
 		{
+		
 			onSuccess: (data) => {
+				console.log('Mutation succeeded with data:', data);
+
 				if (data.error) {
 					setErrorMessage(data.error.message);
 					return;
 				}
-
 				onUserCreated?.();
 				navigate(0);
 			},
-			onError: onError,
+			onError: () => {
+				console.log('Mutation failed');
+				setErrorMessage('Sign up failed. Please try again.');
+			  },
 		},
 	);
 
